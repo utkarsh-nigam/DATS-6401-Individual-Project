@@ -52,9 +52,9 @@
                 drawSheetName('GDPOverall','SELECT A,B,I',metricCompResponseHandler);
                 //sleep(500);
                 drawSheetName('GDPPerCapita','SELECT A,B,I',metricCompResponseHandler);
-                drawSheetName('yearlyPerformance','SELECT B,I WHERE A="United States"',yearlyPerformanceResponseHandler);
+                drawSheetName('yearlyPerformance','SELECT B,I WHERE A="Argentina"',yearlyPerformanceResponseHandler);
                 sleep(500);
-                drawSheetName('yearlyPerformance','SELECT B,C WHERE A="United States"',yearlyPerformanceResponseHandler);
+                drawSheetName('yearlyPerformance','SELECT B,C WHERE A="Argentina"',yearlyPerformanceResponseHandler);
                 drawSheetName('countryComp','SELECT A,Q,Z,H',countryCompResponseHandler);
                 
                 //metricCompResponseHandler("SELECT A,I","SELECT A,I","GDPOverall","GDPperCapita");
@@ -540,9 +540,16 @@
                     </ul>
                     <p>Note:</p>
                     <ul style="list-style-type: square;">
+                        <li>Due to the non-availablity of few metrics for year 2018, date range has been chosen as 2012-2017 to maintain consistency.</li>
                         <li>For cases where data for 1 year is not available, missing values have been treated by subsitituting them with the mean.</li>
                         <li>For cases where data for more than 1 year is not available, missing values have been kept as NA and mean is calculated only as per the available data.</li>
                         <li>For <a href="#yearlyPerformance">yearly performance</a> section, previous data label denotes the mean data for the country over 2012-2017.</li>
+                    </ul>
+                </br>
+                    <p>Special Mention:</p>
+                    <ul>
+                        <li><a href="https://developers.google.com/chart/interactive/docs/gallery" target="_blank">Google Charts</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
                     </ul>
                 </div>
             </section>
